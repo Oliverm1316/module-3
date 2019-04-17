@@ -8,7 +8,7 @@ output:
 ---
 
 
-```{r knitr_init, echo=FALSE, cache=FALSE}
+```{r knitr_init, echo=FALSE, warning = FALSE, cache=FALSE}
 library(knitr)
 library(rmdformats)
 
@@ -24,62 +24,47 @@ opts_chunk$set(echo=FALSE,
 opts_knit$set(width=75)
 ```
 
-## A New Output Format
+<script> 
+    $(document).ready(function() { 
+    $head = $('#header'); 
+    $head.prepend('<A href = https://www.cuttingedge-events.com><img src ="LOGO.png" width="150" align="right"></A>') 
+    }); 
+</script> 
 
-`html_pretty` in the [**prettydoc**](http://github.com/yixuan/prettydoc/)
-package is a new output format for creating HTML document from R Markdown files.
-`html_pretty` is more lightweight compared to `html_document`, and is more
-stylish than `html_vignette` when creating package vignettes.
 
-## New Styles
+## Accommodation
 
-`html_pretty` currently supports three page themes (`cayman`, `tactile` and
-`architect`), and two syntax highlight styles (`github` and `vignette`).
-The theme and highlight styles can be specified in the document metadata,
-for example:
+### **Main Hotel: KSJDGÑSJF**
 
-```yaml
-output:
-  prettydoc::html_pretty:
-    theme: architect
-    highlight: github
-```
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-## Your Familiar Tools
 
-Feel free to use the `knitr` infrastructure with dozens of tunable options in
-your document.
+<img src = "https://r-fa.bstatic.com/images/hotel/max1024x768/148/148979532.jpg" width="360"> <img src = "https://q-fa.bstatic.com/images/hotel/max1024x768/140/14017089.jpg" width="360" align="right"> 
 
-```{r fig.width=6, fig.height=6, fig.align='center'}
-set.seed(123)
-n <- 1000
-x1  <- matrix(rnorm(n), ncol = 2)
-x2  <- matrix(rnorm(n, mean = 3, sd = 1.5), ncol = 2)
-x   <- rbind(x1, x2)
-head(x)
-smoothScatter(x, xlab = "x1", ylab = "x2")
-```
 
-You can include code snippets of languages other than R, but note that
-the block header has no curly brackets around the language name.
+<img src = "https://q-fa.bstatic.com/images/hotel/max1024x768/141/14191840.jpg">
 
-```cpp
-// [[Rcpp::export]]
-NumericVector timesTwo(NumericVector x) {
-    return x * 2;
-}
-```
 
-You can also write math expressions, e.g. $Y = X\beta + \epsilon$,
-footnotes^[A footnote here.], and tables, e.g. using `knitr::kable()`.
+### **Alternative Hotels** {.tabset .tabset-fade .tabset-pills}
 
-```{r, echo=FALSE, results='asis'}
-knitr::kable(head(iris, 10))
-```
+#### HOTEL 2
 
-## Stay Tuned
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
 
-Please visit the [development page](http://github.com/yixuan/prettydoc/) of the 
-`prettydoc` package for latest updates and news. Comments, bug reports and
-pull requests are always welcome.
+<img src = "https://r-fa.bstatic.com/images/hotel/max1024x768/112/112393493.jpg" width="360"> <img src = "https://q-fa.bstatic.com/images/hotel/max1024x768/112/112393525.jpg" width="360" align="right">
+
+<img src = "https://r-fa.bstatic.com/images/hotel/max1024x768/112/112375607.jpg"> 
+
+#### HOTEL 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+
+<img src = "https://r-fa.bstatic.com/images/hotel/max1024x768/112/112393493.jpg" width="360"> <img src = "https://q-fa.bstatic.com/images/hotel/max1024x768/112/112393525.jpg" width="360" align="right">
+
+<img src = "https://r-fa.bstatic.com/images/hotel/max1024x768/112/112375607.jpg">
+
+## Program Overview
+
+
+
 
